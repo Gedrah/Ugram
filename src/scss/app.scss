@@ -1,0 +1,45 @@
+@import "titles";
+
+.no-hover:hover {
+  background-color: transparent;
+}
+
+/*
+***
+***   and single page css
+***
+ */
+
+.align-input-comments {
+  align-items: center;
+  display: grid;
+}
+
+.input-text-comment {
+  padding: 10px;
+}
+
+#app {
+
+}
+.background-auth {
+  background-image: url("../assets/mountain-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+/*
+*** EditProfile css
+ */
+
+.edit-zone {
+  padding: 2% 5%;
+}
+
+.align-title {
+  text-align: center;
+}
+
+.save-button {
+  display: flex;
+  justify-content: center;
+}

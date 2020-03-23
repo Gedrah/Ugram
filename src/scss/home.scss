@@ -1,0 +1,30 @@
+ul.tabs li.tab a {
+  color: rgba(0, 137, 123, 0.7);
+}
+
+ul.tabs li.tab a:hover {
+  color: #00897b;
+}
+
+ul.tabs li.tab a.active {
+  color: #00897b;
+}
+
+ul.tabs div.indicator {
+  background-color: #00af9d;
+}
+
+div.home-tabs {
+  z-index: 3;
+  background-color: #ffffff;
+}
+
+ul.tabs li.tab {
+  width: calc(50% - 1px);
+}
+
+.home-pagination ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

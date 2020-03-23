@@ -1,0 +1,76 @@
+div.container {
+  padding-bottom: 70px;
+  height: calc(100vh - 64px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  div.form {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    div.card {
+      width: 100%;
+    }
+    div.button-centered-register {
+      display: flex;
+      align-content: center;
+      width: 50%;
+      flex-direction: column;
+      padding-top: 20px;
+      button.btn {
+        height: 46px;
+      }
+    }
+    div.button-centered-login {
+      display: flex;
+      align-content: center;
+      width: 100%;
+      flex-direction: row;
+      padding-top: 20px;
+      justify-content: space-around;
+      button.btn {
+        width: 30%;
+        height: 46px;
+      }
+    }
+    p {
+      text-align: center;
+      width: 100%;
+      color: #9f9f9f;
+      font-size: 0.85rem;
+      font-weight: bold;
+      span {
+        padding-left: 4px;
+        color: #008fe1;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.error-login {
+  text-align: center;
+  color: red;
+}
+
+@media screen and (max-width: 409px) {
+  div.container div.form div.button-centered-login {
+    display: inline-grid;
+    align-content: center;
+    width: 100%;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-left: 11px;
+    padding-right: 11px;
+    justify-content: inherit;
+  }
+
+  div.container div.form div.button-centered-login button.btn {
+    height: 46px;
+    margin-bottom: 15px;
+    width: auto;
+    margin-left: 0;
+  }
+}

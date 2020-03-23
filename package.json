@@ -1,0 +1,63 @@
+{
+  "name": "Ugram",
+  "version": "1.0.0",
+  "description": "Avant de commencer, jetez un coup d'oeil aux ressources suivantes:\r * [Getting started with React](https://facebook.github.io/react/docs/getting-started.html)",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gedrah/Ugram.git"
+  },
+  "author": "Donavan Aziaka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gedrah/Ugram/issues"
+  },
+  "homepage": "https://github.com/Gedrah/Ugram#readme",
+  "devDependencies": {
+    "@types/socket.io-client": "^1.4.32",
+    "compression-webpack-plugin": "^2.0.0",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.2.4",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  },
+  "dependencies": {
+    "@material-ui/core": "^3.9.0",
+    "@types/node": "^10.12.18",
+    "@types/react": "^16.7.20",
+    "autobind-decorator": "^2.4.0",
+    "css-loader": "^2.1.0",
+    "dotenv-webpack": "^1.7.0",
+    "js-cookie": "^2.2.0",
+    "materialize-css": "^1.0.0-rc.2",
+    "mobx": "^5.9.0",
+    "mobx-react": "^5.4.3",
+    "node-sass": "^4.11.0",
+    "react": "^16.7.0",
+    "react-alert": "^5.4.0",
+    "react-alert-template-basic": "^1.0.0",
+    "react-dom": "^16.7.0",
+    "react-ga": "^2.5.7",
+    "react-google-login": "^5.0.2",
+    "react-image-filter": "^0.1.2",
+    "react-materialize": "^2.6.0",
+    "react-notification-badge": "^1.4.0",
+    "react-photo-gallery": "^6.3.0",
+    "react-router-dom": "^4.3.1",
+    "react-toastify": "^4.5.2",
+    "react-transition-group": "^2.6.1",
+    "react-webcam": "^1.1.1",
+    "reactdom": "^2.0.0",
+    "sass-loader": "^7.1.0",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0",
+    "style-loader": "^0.23.1",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-stream": "^5.2.1"
+  }
+}

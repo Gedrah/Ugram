@@ -1,0 +1,64 @@
+a i.large-icon {
+  font-size: 45px;
+  color: #ffffff;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+a i.large-icon:hover {
+  font-size: 45px;
+  color: #ffffff;
+  margin-top: 10px;
+  background-color: #006e63;
+  cursor: pointer;
+}
+
+
+div.navbar-top {
+  height: 64px;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div.navbar-top span {
+  height: 100%;
+  vertical-align: text-top;
+  font-size: 40px;
+  margin-left: 12px;
+  font-weight: bolder;
+  color: #ffffff;
+}
+
+div.navbar-top span:hover {
+  height: 100%;
+  vertical-align: text-top;
+  font-size: 40px;
+  margin-left: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #006e63;
+}
+
+.notification-icon {
+  font-size: 20px;
+  position: relative;
+  margin-top: 10px;
+  height: auto;
+}
+
+div.navbar-top span.notification-icon {
+  font-size: 20px;
+  height: auto;
+}
+
+div.navbar-top span:hover.notification-icon {
+  font-size: 20px;
+  height: auto;
+}
+
+li a.notification-text-color {
+  color: red;
+}

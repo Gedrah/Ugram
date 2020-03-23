@@ -1,0 +1,28 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+    - node_modules
+branches:
+  only:
+    - master
+    - release-1
+    - release-2
+    - release-3
+script:
+  - npm install
+  - npm run build
+  - git add --all
+  - git commit -m "auto commit dist folder"
+deploy:
+  provider: s3
+  access_key_id: AKIAI5BPI76TWGCHDQ2A
+  secret_access_key:
+    secure: RD9H1U9VTZg1aYD2WLiItiF2x+fLS2IKXFlvgcZsRiznfRrM4MQZI2sdiDdZrW4aHm4uqneXWap4C9PMh5LK1abEAmu7BfhntjTADygSnWx99yKQrget5H1gtjWVr5BcbQ0y/kr6Rvp6jtyG7w1kyqdA26undMNvAg+8tBDeyH0yO/u3On83PJs42eE8aMZJLDrg9TQ53TMYOFgIG4xt2zV0H/fh1gcKk6NcRsiSw2ttgYVdsJkHgCzeXFxrFFHzNUJmxkox5jtn1t6P3uve4akfLwRbynkcJk1DfnxcCh6CS/jBbv/X7PzStD4hr1icYxoBnYJNdjYF9gcXx6sn+CcOskMejk1FhXlHsw6Bjn8/VjO13mLC9qMbCeNWSq9epcWLsXUMouEykSUvqS4OBj+DI4KfiOmYDzWXKlrIsBmxzbou9ylj8fP6SazQP9nHTA9kvCLiA+gcPjLkoqGqJ/4oWJ4Yfz6GXxf3Ct22NEOacEXG+PAZy8qUbTm+yCsQJrdjBLVZPEMkVAyl/41PY2KUE8XtZnNQUHSV+D4o+0OKlcwXLJ1zFew4Hq/E5jPmFOAwtHZSNvFps2gvWGNiDIGev9NfKwYGxgU8ReHlWp5d2gC+uPrlvYEvvwhDmUg/I2MrrxLjodmZjLf+o1vVf0aZIirhDct8CrYbTn1gZY0=
+  bucket: ugram-team-08
+  acl: public_read
+  detect_encoding: true
+  on:
+    repo: GLO3112-H19/ugram-front-team-08
+

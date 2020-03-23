@@ -1,0 +1,24 @@
+div.inline-filters {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  div {
+    margin-right: 20px;
+
+    label {
+      padding-left: 30px;
+    }
+  }
+}
+
+.inline-search {
+  display: flex;
+  div {
+    width: 100%;
+  }
+}
+
+div.main-div-container-style {
+  padding: 8px;
+}

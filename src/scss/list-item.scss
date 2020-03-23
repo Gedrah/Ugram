@@ -1,0 +1,39 @@
+.list-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.single-commentary-collection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-id-single-commentary {
+  margin-left: 10px;
+}
+
+.commentary-text-overflow-style {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: 20px;
+  max-width: 110px;
+}
+
+.commentary-text-name-style {
+  min-width: 60px;
+  width: fit-content;
+}
+
+.favorite_icon {
+  cursor: pointer;
+  color: red;
+}
+
+.visit-profile-icon {
+  cursor: pointer;
+  color: #00897b;
+  font-size: 35px;
+}
