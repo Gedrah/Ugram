@@ -41,6 +41,7 @@ export class App extends React.Component<{},HistoryState> {
     }
 
     async componentWillMount() {
+        this.checkBackgroundImage('/auth');
         this.initializeReactGA();
     }
 
