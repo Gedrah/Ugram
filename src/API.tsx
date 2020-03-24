@@ -8,6 +8,7 @@ export function API<T>(uri: string, method: string , header?: Headers, body?: an
         body: body
     };
     return fetch(baseUrl.concat(uri), params).then(response => {
+        console.log(response);
         return response.json();
     }).then((data) => {
         if (data && data.message) {
@@ -18,6 +19,7 @@ export function API<T>(uri: string, method: string , header?: Headers, body?: an
         }
         return data;
     }).catch((err) => {
+        console.log(err);
         return true;
     })
 }
