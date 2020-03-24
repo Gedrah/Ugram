@@ -44,8 +44,9 @@ export class App extends React.Component<{},HistoryState> {
     }
 
     async componentWillMount() {
-        if (this.historyListener.location.history == '/auth')
+        if (this.historyListener.location.pathname === '/auth') {
             this.checkBackgroundImage('/auth');
+        }
         this.initializeReactGA();
     }
 
