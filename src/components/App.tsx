@@ -11,6 +11,9 @@ import {AuthPage} from "./auth/AuthPage";
 import {BrowserRouter, Route} from "react-router-dom";
 import * as ReactGA from 'react-ga';
 import { createBrowserHistory } from "history";
+import * as Cookies from "js-cookie";
+
+
 require('../scss/home.scss');
 
 
@@ -31,7 +34,7 @@ export class App extends React.Component<{},HistoryState> {
         super(props);
         this.navigation = React.createRef();
         this.state = {
-            history: this.historyListener.location.pathname,
+            history: '',
             historyState: true
         }
     }
@@ -41,7 +44,8 @@ export class App extends React.Component<{},HistoryState> {
     }
 
     async componentWillMount() {
-        this.checkBackgroundImage('/auth');
+        if (this.historyListener.location.history == '/auth')
+            this.checkBackgroundImage('/auth');
         this.initializeReactGA();
     }
 
@@ -50,7 +54,10 @@ export class App extends React.Component<{},HistoryState> {
     }
 
     async getAllNotifications() {
-        await this.navigation.current.getAllNotifications();
+        if (Cookies.get("UGramUserId") !== undefined
+        && Cookies.get("UGramAccessToken") !== undefined) {
+            await this.navigation.current.getAllNotifications();
+        }
     }
 
     checkBackgroundImage(path) {

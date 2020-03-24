@@ -344,14 +344,14 @@ export class ProfilePage extends React.Component<ProfilePageProps> {
                         <Input label="Tags" onChange={this.handleHashtagOnChange}/>
                         <div className="align-buttons">
                             <Button>Upload</Button>
-                            <Button onClick={(e) => this.openModal(e)}>Webcam</Button>
+                            <Button style={{marginLeft: 47}} onClick={(e) => this.openModal(e)}>Webcam</Button>
                             <Modal
                                 header='Webcam'
                                 modalOptions={{ dismissible: false }}
                                 actions={[
                                     <Button className="red" onClick={(e) => this.closeModal(e)}>Close</Button>
                                 ]}
-                                trigger={<Button style={{ display: 'none' }}>Webcam</Button>}
+                                trigger={<Button style={{ display: 'none', width: 0 }}>Webcam</Button>}
                                 open={this.state['modalWebcam']}>
                                 <div className="inline-webcam">
                                     {this.state['modalWebcam'] && <Webcam
@@ -371,6 +371,8 @@ export class ProfilePage extends React.Component<ProfilePageProps> {
                                     <img src={this.previewWebcam}/>
                                 </div>
                             </Modal>
+                        </div>
+                        <div className="filter-container">
                             <Modal
                                 header='Image Filter'
                                 actions={[
@@ -382,12 +384,18 @@ export class ProfilePage extends React.Component<ProfilePageProps> {
                                     <ImageFilter
                                         image={this.previewImage}
                                         filter={this.filterType}/>
+
                                 </div>
-                                <div className="align-buttons">
-                                    <Button onClick={(e) => this.chooseFilter(e, 'none')}>None</Button>
-                                    <Button onClick={(e) => this.chooseFilter(e, 'invert')}>Invert</Button>
-                                    <Button onClick={(e) => this.chooseFilter(e, 'grayscale')}>GrayScale</Button>
-                                    <Button onClick={(e) => this.chooseFilter(e, 'sepia')}>Sepia</Button>
+
+                                <div className="boutons-container">
+                                    <div className="align-buttons">
+                                        <Button className="filter-buttons" small="true" onClick={(e) => this.chooseFilter(e, 'none')}>None</Button>
+                                        <Button className="filter-buttons" mall="true" onClick={(e) => this.chooseFilter(e, 'invert')}>Invert</Button>
+                                    </div>
+                                    <div className="align-buttons">
+                                        <Button className="filter-buttons" small="true" onClick={(e) => this.chooseFilter(e, 'grayscale')}>Gray</Button>
+                                        <Button className="filter-buttons" small="true" onClick={(e) => this.chooseFilter(e, 'sepia')}>Sepia</Button>
+                                    </div>
                                 </div>
                             </Modal>
                         </div>

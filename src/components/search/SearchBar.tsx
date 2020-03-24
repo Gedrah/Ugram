@@ -178,7 +178,7 @@ export class SearchBar extends React.Component<SearchBarProps> {
                                       onAutocomplete={(event) => this.handleOnAutoComplete(event)}
                                       onKeyPress={event => this.getFilteredList(event)}
                         />
-                        <Button onClick={() => this.searchList(this.searchInput, false)}>Search</Button>
+                        <Button style={{marginTop: 21, marginLeft: 10}} onClick={() => this.searchList(this.searchInput, false)}>Search</Button>
                     </div>
                     <div className="inline-filters">
                         <div>

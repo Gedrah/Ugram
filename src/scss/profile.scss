@@ -109,6 +109,14 @@ div.profile-page-div-top-style div.card-content div:not(.card-user-info-title) {
   height: 100%;
 }
 
+.filter-container {
+  margin-top: 10px;
+}
+
+.filter-container button {
+  width: 100%;
+}
+
 @media screen and (min-width: 1000px) {
   div.profile-page-div-top-style div.image-container {
     max-width: 250px;
@@ -138,7 +146,17 @@ div.profile-page-div-top-style div.card-content div:not(.card-user-info-title) {
 
   .align-buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .boutons-container {
+    display: flex;
+    justify-content: center
+  }
+
+  .filter-buttons {
+    margin: 10px;
   }
 
   div.profile-page-div-top-style div.image-container img {
@@ -150,7 +168,7 @@ div.profile-page-div-top-style div.card-content div:not(.card-user-info-title) {
 @media screen and (max-width: 1000px) {
   div.profile-page-div-top-style div.image-container {
     width: auto;
-    height: 350px;
+    height: 250px;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -169,12 +187,20 @@ div.profile-page-div-top-style div.card-content div:not(.card-user-info-title) {
 
   div.profile-page-div-top-style div.image-container img {
     width: auto;
-    height: 350px;
+    height: 250px;
     border-radius: 50%;
   }
 
+
+
   .align-buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .filter-buttons {
+    width: 110px;
   }
 }

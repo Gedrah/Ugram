@@ -21,6 +21,7 @@ export class Navigation extends React.Component<NavigationState> {
     private notifList = [];
     private notifContainer = {
         display: 'inline-block',
+        height: '0',
     };
 
     constructor(props) {
